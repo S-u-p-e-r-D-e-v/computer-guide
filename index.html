@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beginner's Guide to Computers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      position: relative;
+      min-height: 100vh;
+    }
+    header, footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: relative;
+      z-index: 10;
+    }
+    .container {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+      color: #222;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #999;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+    }
+    pre {
+      background: #eee;
+      padding: 1em;
+      overflow-x: auto;
+      border-radius: 4px;
+      font-size: 1.1em;
+    }
+    nav {
+      background: #444;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 15;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1.1em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #ffc107;
+      outline: none;
+    }
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    .lowkey-prompt {
+      font-style: italic;
+      color: #555;
+      margin: 1em 0;
+      text-align: center;
+    }
+    /* Watermark styling */
+    body::after {
+      content: "SuperDev";
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.15);
+      user-select: none;
+      pointer-events: none;
+      z-index: 10000;
+      transform: rotate(-25deg);
+      letter-spacing: 2px;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5em 0;
+      }
+      .container {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Beginner's Guide to Computers</h1>
+  </header>
+
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#what-is-computer">What is a Computer</a>
+    <a href="#components">Components</a>
+    <a href="#skills">Basic Skills</a>
+    <a href="#software-hardware">Software vs Hardware</a>
+    <a href="#task-manager">Task Manager</a>
+    <a href="#hz">What is Hz</a>
+    <a href="#networking">Networking</a>
+    <a href="#filetypes">File Types</a>
+    <a href="#server">Servers</a>
+    <a href="#slow">Why PCs Slow Down</a>
+    <a href="#types">Computer Types</a>
+    <a href="#learn">Learn More</a>
+    <a href="#security">Security</a>
+    <a href="#internet-history">Internet History</a>
+  </nav>
+
+  <div class="container">
+    <p class="lowkey-prompt">
+      Not sure how computers really work? No worries. This site’s just here to help you get the hang of things—step by step, no pressure.
+    </p>
+
+    <section id="intro">
+      <h2>Intro</h2>
+      <p>Welcome! Whether you've never used a computer or just want to understand how it works, you're in the right place. Computers are an amazing invention that help us do everything from writing documents, playing games, surfing the web, to creating art and even controlling spaceships!</p>
+      <p>This guide will walk you through the basics, explaining important concepts in everyday language.</p>
+    </section>
+
+    <section id="what-is-computer">
+      <h2>What is a Computer?</h2>
+      <p>A computer is an electronic device that accepts input, processes data, stores information, and produces output. It follows instructions called programs to perform tasks efficiently.</p>
+      <pre>
+Computer
+├── Input: Keyboard, Mouse, Microphone, Scanner
+├── Processing: CPU (Central Processing Unit)
+├── Storage: Hard Drives, SSD
+├── Output: Monitor, Printer, Speakers
+└── Communication: Network Cards, Wi-Fi Adapters
+      </pre>
+      <p>Modern computers are everywhere – from tiny smartwatches to massive data centers.</p>
+    </section>
+
+    <section id="components">
+      <h2>Main Components</h2>
+      <ul>
+        <li><strong>CPU (Central Processing Unit)</strong>: The brain of the computer that performs calculations and runs programs.</li>
+        <li><strong>RAM (Random Access Memory)</strong>: Temporary memory for quick data access by the CPU while running programs.</li>
+        <li><strong>Storage (SSD/HDD)</strong>: Long-term memory where your files, programs, and operating system live.</li>
+        <li><strong>GPU (Graphics Processing Unit)</strong>: Specialized processor to render images, videos, and 3D graphics smoothly.</li>
+        <li><strong>Motherboard</strong>: The main circuit board connecting all components.</li>
+        <li><strong>Power Supply Unit (PSU)</strong>: Converts electricity from your outlet to usable power for your computer parts.</li>
+        <li><strong>Cooling System</strong>: Fans, heat sinks, or liquid coolers that keep components from overheating.</li>
+        <li><strong>Input Devices</strong>: Keyboard, mouse, microphone, and more for user interaction.</li>
+        <li><strong>Output Devices</strong>: Monitor, speakers, printer that display or play the computer’s response.</li>
+      </ul>
+      <p>Each component plays a specific role to make your computer work smoothly.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Basic Computer Skills</h2>
+      <ul>
+        <li>Logging in with usernames and passwords to keep your data private.</li>
+        <li>Using keyboard shortcuts to improve productivity.</li>
+        <li>Navigating the file system: creating, saving, copying, moving, and organizing files and folders.</li>
+        <li>Installing and uninstalling software.</li>
+        <li>Connecting to the internet and troubleshooting basic network issues.</li>
+        <li>Understanding basic troubleshooting steps like restarting your machine.</li>
+      </ul>
+    </section>
+
+    <section id="software-hardware">
+      <h2>Software vs Hardware</h2>
+      <p><strong>Hardware</strong> is the physical parts of your computer you can touch. Examples include the keyboard, mouse, hard drive, and screen.</p>
+      <p><strong>Software</strong> consists of the programs and instructions that tell the hardware what to do. Examples: Operating systems (Windows, macOS, Linux), apps like browsers (Chrome, Firefox), games, and utilities.</p>
+      <p>For instance, the YouTube app (software) runs on your phone’s hardware.</p>
+      <p>Together, software and hardware work as a system.</p>
+    </section>
+
+    <section id="task-manager">
+      <h2>What is Task Manager?</h2>
+      <p>The Task Manager is a tool that shows you all the programs and background processes running on your computer. It provides information about their CPU, memory, disk, and network usage.</p>
+      <p>You can open it quickly by pressing <code>Ctrl + Shift + Esc</code> on Windows.</p>
+      <p>It helps you:</p>
+      <ul>
+        <li>See which programs are slowing down your PC.</li>
+        <li>End unresponsive applications.</li>
+        <li>Monitor system performance.</li>
+      </ul>
+    </section>
+
+    <section id="hz">
+      <h2>What is Hertz (Hz)?</h2>
+      <ul>
+        <li><strong>CPU Clock Speed:</strong> Measured in Gigahertz (GHz), showing how many billions of cycles the CPU can perform every second.</li>
+        <li><strong>RAM Speed:</strong> Measured in Megahertz (MHz), indicating how fast the memory can be read or written.</li>
+        <li><strong>Monitor Refresh Rate:</strong> Measured in Hertz (Hz), indicating how many times per second the screen updates. Higher refresh rates mean smoother visuals.</li>
+      </ul>
+      <p>Higher numbers usually mean better performance, but other factors also matter.</p>
+    </section>
+
+    <section id="networking">
+      <h2>Networking Basics</h2>
+      <ul>
+        <li><strong>Modem:</strong> Device that connects your home network to the internet service provider (ISP).</li>
+        <li><strong>Router:</strong> Distributes internet connection to multiple devices within your network, wired or wirelessly.</li>
+        <li><strong>Wi-Fi:</strong> Wireless network connection, convenient but sometimes slower or less stable than wired.</li>
+        <li><strong>Ethernet:</strong> Wired network connection, usually faster and more reliable than Wi-Fi.</li>
+        <li><strong>IP Address:</strong> A unique number assigned to each device on a network, like a street address for sending data.</li>
+        <li><strong>DNS (Domain Name System):</strong> Translates website names (like google.com) into IP addresses your computer can understand.</li>
+      </ul>
+    </section>
+
+    <section id="filetypes">
+      <h2>Common File Types</h2>
+      <ul>
+        <li><code>.exe</code> — Executable program file for Windows.</li>
+        <li><code>.app</code> — Application package on macOS.</li>
+        <li><code>.docx</code> — Microsoft Word document.</li>
+        <li><code>.xlsx</code> — Spreadsheet file for Microsoft Excel.</li>
+        <li><code>.png/.jpg/.jpeg/.gif</code> — Various image formats.</li>
+        <li><code>.mp3/.wav</code> — Audio files.</li>
+        <li><code>.mp4/.mkv</code> — Video files.</li>
+        <li><code>.zip/.rar</code> — Compressed archive folders.</li>
+        <li><code>.html</code> — Webpage files.</li>
+        <li><code>.pdf</code> — Portable Document Format for sharing documents.</li>
+      </ul>
+      <p>Understanding file types helps you choose the right app to open or edit them.</p>
+    </section>
+
+    <section id="server">
+      <h2>What is a Server?</h2>
+      <p>A server is a computer or system that provides resources, data, services, or programs to other computers, called clients, over a network. Common types include:</p>
+      <ul>
+        <li><strong>Web Server:</strong> Hosts websites and delivers webpages to your browser.</li>
+        <li><strong>File Server:</strong> Stores and manages files that multiple users can access.</li>
+        <li><strong>Game Server:</strong> Hosts multiplayer games online.</li>
+        <li><strong>Mail Server:</strong> Handles sending and receiving emails.</li>
+      </ul>
+      <p>You can even repurpose an old PC as a personal server at home.</p>
+    </section>
+
+    <section id="slow">
+      <h2>Why Computers Slow Down</h2>
+      <ul>
+        <li>Too many apps and background processes running at once.</li>
+        <li>Insufficient RAM for your tasks.</li>
+        <li>Old or nearly full storage drives.</li>
+        <li>Overheating due to dust build-up or failing cooling.</li>
+        <li>Malware or viruses.</li>
+        <li>Outdated or fragmented software and drivers.</li>
+      </ul>
+      <p>Regular maintenance like deleting unnecessary files, updating software, and running antivirus scans can keep your PC speedy.</p>
+    </section>
+
+    <section id="types">
+      <h2>Desktop vs Laptop vs Server</h2>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Strengths</th><th>Weaknesses</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desktop</td>
+            <td>Powerful, upgradeable, better cooling, easier repairs</td>
+            <td>Not portable, needs external peripherals</td>
+          </tr>
+          <tr>
+            <td>Laptop</td>
+            <td>Portable, built-in battery, integrated devices</td>
+            <td>Typically less powerful, limited upgrade options, more expensive</td>
+          </tr>
+          <tr>
+            <td>Server</td>
+            <td>Handles lots of tasks, scalable, designed for 24/7 uptime</td>
+            <td>Not for gaming or casual use, higher power consumption</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="learn">
+      <h2>How to Learn More</h2>
+      <ul>
+        <li>Watch tutorials on YouTube channels like <a href="https://www.youtube.com/user/Techquickie" target="_blank" rel="noopener">Techquickie</a> and <a href="https://www.youtube.com/user/LinusTechTips" target="_blank" rel="noopener">Linus Tech Tips</a>.</li>
+        <li>Use website platforms such as <a href="https://khanacademy.org" target="_blank" rel="noopener">Khan Academy</a>, <a href="https://codecademy.com" target="_blank" rel="noopener">Codecademy</a> and <a href="https://freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a>.</li>
+        <li>Try building your own PC virtually using simulators like PC Building Simulator.</li>
+        <li>Explore Linux by installing beginner-friendly distributions (e.g., Ubuntu).</li>
+        <li>Join computer enthusiast forums (Reddit’s r/buildapc, Stack Exchange network).</li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <h2>Basic Computer Security</h2>
+      <p>Keeping your computer safe from threats is essential. Here are some tips:</p>
+      <ul>
+        <li>Use strong, unique passwords for your accounts.</li>
+        <li>Keep your operating system and software updated regularly.</li>
+        <li>Install and maintain reputable antivirus and anti-malware programs.</li>
+        <li>Be cautious with email attachments and unknown downloads.</li>
+        <li>Backup your important files regularly.</li>
+        <li>Use firewalls and secure your Wi-Fi with a strong password.</li>
+        <li>Learn to recognize phishing scams and suspicious links.</li>
+      </ul>
+    </section>
+
+    <section id="internet-history">
+      <h2>A Brief History of the Internet</h2>
+      <p>The internet began as a U.S. government project in the late 1960s called ARPANET, aimed at connecting computers for communication. It expanded in the 1980s and 1990s to universities and businesses, growing into the global network we use today.</p>
+      <p>Key milestones include:</p>
+      <ul>
+        <li>1989: Tim Berners-Lee invents the World Wide Web.</li>
+        <li>1993: First graphical web browser, Mosaic, popularizes internet use.</li>
+        <li>2000s: Broadband and Wi-Fi become widespread.</li>
+        <li>Today: Billions of devices connected globally, enabling streaming, social media, cloud computing, and more.</li>
+      </ul>
+      <p>Understanding the internet's history helps appreciate how computers connect and share information worldwide.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© SuperDev</p>
+  </footer>
+</body>
+</html>
